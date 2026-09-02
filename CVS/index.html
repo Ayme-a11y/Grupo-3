@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        CV - Hubert Ortiz Villegas
+    </title>
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- LIBRERÍA HTML2CANVAS -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+    ></script>
+
+
+    <!-- LIBRERÍA JSPDF -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+    ></script>
+
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         BOTÓN DE DESCARGA
+    ========================== -->
+
+    <div class="boton-contenedor">
+
+        <button
+            id="btnDescargar"
+            onclick="descargarPDF()"
+        >
+
+            📥 DESCARGAR CV EN PDF
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================
+         CURRICULUM
+    ========================== -->
+
+    <div
+        class="cv"
+        id="cv"
+    >
+
+
+        <!-- =========================
+             COLUMNA IZQUIERDA
+        ========================== -->
+
+        <aside class="lado-izquierdo">
+
+
+            <!-- FOTO TEMPORAL -->
+
+            <div class="foto-contenedor">
+
+                <div class="foto-iniciales">
+
+                    HO
+
+                </div>
+
+            </div>
+
+
+
+            <!-- NOMBRE LATERAL -->
+
+            <div class="nombre-lateral">
+
+                <p>
+
+                    HUBERT ORTIZ VILLEGAS
+
+                </p>
+
+
+                <p>
+
+                    20 AÑOS
+
+                </p>
+
+            </div>
+
+
+
+            <!-- CONTACTO -->
+
+            <section class="informacion">
+
+                <h2>
+
+                    CONTACTO
+
+                </h2>
+
+
+                <p>
+
+                    📧 Gmail: Pendiente
+
+                </p>
+
+
+                <p>
+
+                    📱 Teléfono: Pendiente
+
+                </p>
+
+
+                <p>
+
+                    📍 Lima, Perú
+
+                </p>
+
+            </section>
+
+
+
+            <!-- INFORMACIÓN -->
+
+            <section class="informacion">
+
+                <h2>
+
+                    INFORMACIÓN
+
+                </h2>
+
+
+                <ul>
+
+                    <li>
+                        Estudiante universitario
+                    </li>
+
+                    <li>
+                        Interés en mejora continua
+                    </li>
+
+                    <li>
+                        Interés en innovación
+                    </li>
+
+                    <li>
+                        Disponibilidad para aprender
+                    </li>
+
+                    <li>
+                        Trabajo en equipo
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+
+            <!-- HABILIDADES -->
+
+            <section class="informacion">
+
+                <h2>
+
+                    HABILIDADES
+
+                </h2>
+
+
+                <p>
+
+                    • Investigación
+
+                </p>
+
+
+                <p>
+
+                    • Microsoft Excel
+
+                </p>
+
+
+                <p>
+
+                    • HTML y CSS
+
+                </p>
+
+
+                <p>
+
+                    • JavaScript básico
+
+                </p>
+
+
+                <p>
+
+                    • Internet de las Cosas
+
+                </p>
+
+
+                <p>
+
+                    • Resolución de problemas
+
+                </p>
+
+
+            </section>
+
+
+
+            <!-- DATOS PERSONALES -->
+
+            <section class="informacion">
+
+                <h2>
+
+                    DATOS PERSONALES
+
+                </h2>
+
+
+                <p>
+
+                    Edad: 20 años
+
+                </p>
+
+
+                <!--
+                    No es recomendable colocar
+                    el DNI en un CV público
+                -->
+
+                <p>
+
+                    Nacionalidad: Peruana
+
+                </p>
+
+
+            </section>
+
+
+        </aside>
+
+
+
+        <!-- =========================
+             COLUMNA DERECHA
+        ========================== -->
+
+        <main class="lado-derecho">
+
+
+            <!-- ENCABEZADO -->
+
+            <header>
+
+                <h1>
+
+                    HUBERT
+
+                    <span>
+
+                        ORTIZ VILLEGAS
+
+                    </span>
+
+                </h1>
+
+
+                <h3>
+
+                    ESTUDIANTE DE INGENIERÍA INDUSTRIAL
+
+                </h3>
+
+            </header>
+
+
+
+            <!-- =========================
+                 PERFIL PROFESIONAL
+            ========================== -->
+
+            <section class="seccion">
+
+                <h2>
+
+                    PERFIL PROFESIONAL
+
+                </h2>
+
+
+                <p>
+
+                    Estudiante de Ingeniería Industrial con interés
+                    en la mejora continua, optimización de procesos,
+                    gestión de operaciones, sostenibilidad e innovación
+                    tecnológica. Me caracterizo por mi capacidad de
+                    análisis, responsabilidad, trabajo en equipo y
+                    disposición para aprender y desarrollar soluciones
+                    eficientes a problemas reales.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- =========================
+                 EXPERIENCIA
+            ========================== -->
+
+            <section class="seccion">
+
+                <h2>
+
+                    EXPERIENCIA
+
+                </h2>
+
+
+                <div class="experiencia-item">
+
+                    <h4>
+
+                        PROYECTOS ACADÉMICOS
+
+                    </h4>
+
+
+                    <span>
+
+                        2025 - ACTUALIDAD
+
+                    </span>
+
+
+                    <p>
+
+                        Participación en el desarrollo de proyectos
+                        universitarios relacionados con innovación,
+                        sostenibilidad, análisis de procesos y búsqueda
+                        de soluciones a problemas reales.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="experiencia-item">
+
+                    <h4>
+
+                        DESARROLLO DE PROPUESTAS TECNOLÓGICAS
+
+                    </h4>
+
+
+                    <span>
+
+                        PROYECTOS UNIVERSITARIOS
+
+                    </span>
+
+
+                    <p>
+
+                        Diseño de propuestas relacionadas con el
+                        aprovechamiento eficiente de recursos,
+                        sostenibilidad y aplicación de tecnologías
+                        como Internet de las Cosas (IoT).
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="experiencia-item">
+
+                    <h4>
+
+                        INVESTIGACIÓN Y ANÁLISIS
+
+                    </h4>
+
+
+                    <span>
+
+                        EXPERIENCIA ACADÉMICA
+
+                    </span>
+
+
+                    <p>
+
+                        Búsqueda, selección y análisis de artículos
+                        científicos para el desarrollo de investigaciones
+                        y proyectos académicos.
+
+                    </p>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================
+                 FORMACIÓN
+            ========================== -->
+
+            <section class="seccion">
+
+                <h2>
+
+                    FORMACIÓN
+
+                </h2>
+
+
+                <div class="formacion-item">
+
+                    <h4>
+
+                        INGENIERÍA INDUSTRIAL
+
+                    </h4>
+
+
+                    <p>
+
+                        Formación universitaria en Ingeniería Industrial.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="formacion-item">
+
+                    <h4>
+
+                        PROGRAMACIÓN Y DESARROLLO WEB
+
+                    </h4>
+
+
+                    <p>
+
+                        Conocimientos en HTML, CSS, JavaScript y
+                        fundamentos de programación.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="formacion-item">
+
+                    <h4>
+
+                        PROYECTOS DE SOSTENIBILIDAD E INNOVACIÓN
+
+                    </h4>
+
+
+                    <p>
+
+                        Desarrollo de propuestas académicas relacionadas
+                        con sostenibilidad, eficiencia energética,
+                        innovación y tecnologías IoT.
+
+                    </p>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================
+                 HERRAMIENTAS
+            ========================== -->
+
+            <section class="seccion">
+
+                <h2>
+
+                    HERRAMIENTAS
+
+                </h2>
+
+
+                <!-- EXCEL -->
+
+                <div class="habilidad">
+
+                    <span>
+
+                        MICROSOFT EXCEL
+
+                    </span>
+
+
+                    <div class="barra">
+
+                        <div
+                            class="nivel excel"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- HTML -->
+
+                <div class="habilidad">
+
+                    <span>
+
+                        HTML / CSS
+
+                    </span>
+
+
+                    <div class="barra">
+
+                        <div
+                            class="nivel html"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- JAVASCRIPT -->
+
+                <div class="habilidad">
+
+                    <span>
+
+                        JAVASCRIPT
+
+                    </span>
+
+
+                    <div class="barra">
+
+                        <div
+                            class="nivel javascript"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IOT -->
+
+                <div class="habilidad">
+
+                    <span>
+
+                        IoT
+
+                    </span>
+
+
+                    <div class="barra">
+
+                        <div
+                            class="nivel iot"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================
+                 IDIOMAS
+            ========================== -->
+
+            <section class="seccion">
+
+                <h2>
+
+                    IDIOMAS
+
+                </h2>
+
+
+                <!-- ESPAÑOL -->
+
+                <div class="habilidad">
+
+                    <span>
+
+                        ESPAÑOL
+
+                    </span>
+
+
+                    <div class="barra">
+
+                        <div
+                            class="nivel espanol"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- INGLES -->
+
+                <div class="habilidad">
+
+                    <span>
+
+                        INGLÉS
+
+                    </span>
+
+
+                    <div class="barra">
+
+                        <div
+                            class="nivel ingles"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

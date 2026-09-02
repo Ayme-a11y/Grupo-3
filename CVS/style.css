@@ -1,0 +1,747 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #dfe4ea,
+            #bfc7d1
+        );
+
+
+    padding: 40px 20px;
+
+}
+
+
+/* =========================
+   BOTÓN DESCARGAR
+========================= */
+
+.boton-contenedor {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+.boton-contenedor button {
+
+    padding:
+        15px
+        30px;
+
+
+    border: none;
+
+    border-radius: 10px;
+
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #17315f,
+            #3976ad
+        );
+
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+
+    box-shadow:
+
+        0 7px 0
+        #0c1c38,
+
+        0 15px 25px
+        rgba(0,0,0,0.25);
+
+
+    transition: 0.2s;
+
+}
+
+
+/* HOVER */
+
+.boton-contenedor button:hover {
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* CLICK */
+
+.boton-contenedor button:active {
+
+    transform:
+        translateY(4px);
+
+
+    box-shadow:
+
+        0 2px 0
+        #0c1c38;
+
+}
+
+
+/* BOTÓN DESACTIVADO */
+
+.boton-contenedor button:disabled {
+
+    opacity: 0.7;
+
+    cursor: not-allowed;
+
+}
+
+
+/* =========================
+   CV
+========================= */
+
+.cv {
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    min-height: 1120px;
+
+    margin: auto;
+
+
+    display: grid;
+
+    grid-template-columns:
+        34%
+        66%;
+
+
+    background: white;
+
+
+    overflow: hidden;
+
+
+    box-shadow:
+
+        0 20px 50px
+        rgba(0,0,0,0.25);
+
+}
+
+
+/* =========================
+   COLUMNA IZQUIERDA
+========================= */
+
+.lado-izquierdo {
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #142d59,
+            #1b396b
+        );
+
+
+    color: white;
+
+
+    padding:
+
+        50px
+        35px;
+
+}
+
+
+/* =========================
+   FOTO
+========================= */
+
+.foto-contenedor {
+
+    width: 180px;
+
+    height: 180px;
+
+
+    margin:
+
+        0 auto
+        30px;
+
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+
+    border:
+
+        7px solid
+        #f1f1f1;
+
+
+    box-shadow:
+
+        8px 8px 20px
+        rgba(0,0,0,0.35);
+
+}
+
+
+/* FOTO TEMPORAL */
+
+.foto-iniciales {
+
+    width: 100%;
+
+    height: 100%;
+
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #e8edf3,
+            #bfc9d8
+        );
+
+
+    color: #17315f;
+
+    font-size: 58px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   NOMBRE LATERAL
+========================= */
+
+.nombre-lateral {
+
+    text-align: center;
+
+    padding-bottom: 20px;
+
+    margin-bottom: 30px;
+
+
+    border-bottom:
+
+        1px solid
+        rgba(255,255,255,0.45);
+
+}
+
+
+.nombre-lateral p:first-child {
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+}
+
+
+.nombre-lateral p:last-child {
+
+    font-size: 11px;
+
+    opacity: 0.8;
+
+}
+
+
+/* =========================
+   INFORMACIÓN
+========================= */
+
+.informacion {
+
+    margin-bottom: 32px;
+
+}
+
+
+.informacion h2 {
+
+    font-size: 18px;
+
+    letter-spacing: 1px;
+
+
+    padding-bottom: 10px;
+
+    margin-bottom: 14px;
+
+
+    border-bottom:
+
+        1px solid
+        rgba(255,255,255,0.45);
+
+}
+
+
+.informacion p {
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #f1f3f7;
+
+}
+
+
+.informacion ul {
+
+    padding-left: 17px;
+
+}
+
+
+.informacion li {
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+
+    line-height: 1.4;
+
+}
+
+
+/* =========================
+   COLUMNA DERECHA
+========================= */
+
+.lado-derecho {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #eeeeee
+        );
+
+
+    padding:
+
+        60px
+        50px;
+
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+header {
+
+    padding-bottom: 20px;
+
+    margin-bottom: 30px;
+
+
+    border-bottom:
+
+        2px solid
+        #a5a9ae;
+
+}
+
+
+header h1 {
+
+    color: #17315f;
+
+    font-size: 40px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+
+}
+
+
+header h1 span {
+
+    font-weight: 300;
+
+    color: #3976ad;
+
+}
+
+
+header h3 {
+
+    text-align: right;
+
+    color: #666;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    font-weight: normal;
+
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.seccion {
+
+    margin-bottom: 30px;
+
+}
+
+
+.seccion h2 {
+
+    color: #23324a;
+
+    font-size: 20px;
+
+    letter-spacing: 1px;
+
+
+    padding-bottom: 10px;
+
+    margin-bottom: 16px;
+
+
+    border-bottom:
+
+        1px solid
+        #aeb2b8;
+
+}
+
+
+.seccion p {
+
+    color: #555;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================
+   EXPERIENCIA
+========================= */
+
+.experiencia-item {
+
+    margin-bottom: 20px;
+
+}
+
+
+.experiencia-item h4 {
+
+    color: #333;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.experiencia-item span {
+
+    display: block;
+
+    color: #777;
+
+    font-size: 11px;
+
+    margin-bottom: 7px;
+
+}
+
+
+/* =========================
+   FORMACIÓN
+========================= */
+
+.formacion-item {
+
+    margin-bottom: 17px;
+
+}
+
+
+.formacion-item h4 {
+
+    color: #333;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* =========================
+   HABILIDADES Y BARRAS
+========================= */
+
+.habilidad {
+
+    display: grid;
+
+    grid-template-columns:
+        180px
+        1fr;
+
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 13px;
+
+}
+
+
+.habilidad span {
+
+    color: #555;
+
+    font-size: 12px;
+
+}
+
+
+/* FONDO DE LA BARRA */
+
+.barra {
+
+    height: 7px;
+
+    background: #d5d8dc;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+}
+
+
+/* NIVEL */
+
+.nivel {
+
+    height: 100%;
+
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #17315f,
+            #3976ad
+        );
+
+
+    border-radius: 10px;
+
+}
+
+
+/* =========================
+   NIVELES
+========================= */
+
+.excel {
+
+    width: 85%;
+
+}
+
+
+.html {
+
+    width: 80%;
+
+}
+
+
+.javascript {
+
+    width: 65%;
+
+}
+
+
+.iot {
+
+    width: 70%;
+
+}
+
+
+.espanol {
+
+    width: 100%;
+
+}
+
+
+.ingles {
+
+    width: 55%;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 750px) {
+
+
+    body {
+
+        padding: 15px;
+
+    }
+
+
+    .cv {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .lado-izquierdo {
+
+        padding:
+            40px
+            30px;
+
+    }
+
+
+    .lado-derecho {
+
+        padding:
+            40px
+            30px;
+
+    }
+
+
+    header h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .habilidad {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 6px;
+
+    }
+
+}
+
+
+/* =========================
+   IMPRESIÓN
+========================= */
+
+@media print {
+
+
+    body {
+
+        background: white;
+
+        padding: 0;
+
+    }
+
+
+    .boton-contenedor {
+
+        display: none;
+
+    }
+
+
+    .cv {
+
+        box-shadow: none;
+
+        width: 100%;
+
+    }
+
+}
