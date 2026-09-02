@@ -1,0 +1,209 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor {
+    background: white;
+    width: 100%;
+    max-width: 750px;
+
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+
+    overflow: hidden;
+}
+
+
+/* ENCABEZADO */
+
+.encabezado {
+    background: #1f2937;
+    color: white;
+
+    text-align: center;
+    padding: 30px;
+}
+
+.encabezado h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.encabezado p {
+    font-size: 15px;
+    color: #d1d5db;
+}
+
+
+/* FORMULARIO */
+
+form {
+    padding: 30px;
+}
+
+
+/* FILAS */
+
+.fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+/* CAMPOS */
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo-completo {
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+
+/* INPUTS Y SELECT */
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+input:focus,
+select:focus {
+    border-color: #374151;
+    box-shadow: 0 0 0 2px rgba(55, 65, 81, 0.1);
+}
+
+
+input::placeholder {
+    color: #9ca3af;
+}
+
+
+/* MENSAJES DE ERROR */
+
+small {
+    display: block;
+    margin-top: 5px;
+    color: #dc2626;
+    font-size: 13px;
+}
+
+
+/* BOTONES */
+
+.botones {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+button {
+    flex: 1;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.btn-registrar {
+    background: #1f2937;
+    color: white;
+}
+
+.btn-registrar:hover {
+    background: #111827;
+}
+
+
+.btn-limpiar {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.btn-limpiar:hover {
+    background: #d1d5db;
+}
+
+
+/* MENSAJE FINAL */
+
+#mensaje {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* DISEÑO PARA CELULAR */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .fila {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .encabezado h1 {
+        font-size: 23px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+}
+
